@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jobs-humana-international.netlify.app/" />
+    <meta property="og:title" content="Humana International Group - Find Your Dream Job" />
+    <meta property="og:description" content="Humana International Group helps you find your dream positions and connects exceptional talent with top companies." />
+    <meta property="og:image" content="https://jobs-humana-international.netlify.app/thumbnail.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://jobs-humana-international.netlify.app/" />
+    <meta name="twitter:title" content="Humana International Group - Find Your Dream Job" />
+    <meta name="twitter:description" content="Humana International Group helps you find your dream positions and connects exceptional talent with top companies." />
+    <meta name="twitter:image" content="https://jobs-humana-international.netlify.app/thumbnail.jpg" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Industrial Jobs - Find Your Dream Job</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --accent: #f1f5f9;
+            --light: #ffffff;
+            --dark: #1e293b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --gradient: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--light);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-content {
+            margin-left: 10px;
+        }
+
+        .logo-main {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .logo-sub {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            padding: 0.6rem 1.8rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--gradient);
+            color: white;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        /* Jobs Section */
+        .jobs {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .filter-bar input,
+        .filter-bar select {
+            padding: 0.8rem 1rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .job-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid var(--primary);
+            height: fit-content;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .job-title {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .job-location {
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .job-location i {
+            margin-right: 0.5rem;
+        }
+
+        .job-type {
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .job-summary {
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .job-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        /* Modal Styles */
+        .job-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: var(--light);
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: var(--secondary);
+        }
+
+        .close-modal:hover {
+            color: var(--dark);
+        }
+
+        .modal-job-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .modal-job-title {
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-job-details {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-job-details p {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .modal-job-responsibilities {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-job-responsibilities h4 {
+            margin-bottom: 0.8rem;
+            color: var(--dark);
+        }
+
+        .modal-job-responsibilities ul {
+            padding-left: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .modal-job-responsibilities li {
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-job-requirements {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-job-requirements h4 {
+            margin-bottom: 0.8rem;
+            color: var(--dark);
+        }
+
+        .modal-job-requirements ul {
+            padding-left: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .modal-job-requirements li {
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background-color: var(--accent);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            background-color: var(--accent);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .feature-card p {
+            color: var(--secondary);
+        }
+
+        /* Form Section */
+        .upload-section {
+            padding: 4rem 0;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--light);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-title h2 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-title p {
+            color: var(--secondary);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.9rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: var(--light);
+        }
+
+        .footer-section p {
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-links a i {
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--light);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #334155;
+            color: var(--light);
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+
+            .job-type {
+                margin-top: 1rem;
+            }
+
+            .job-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+                padding: 1.5rem;
+            }
+
+            .modal-actions {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i
+                        class="fas fa-brain"
+                        style="
+                            font-size: 2.5rem;
+                            background: var(--gradient);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        "
+                    ></i>
+                    <div class="logo-content">
+                        <div class="logo-main">Industrial Jobs</div>
+                        <div class="logo-sub">by Humana International Group</div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#jobs">Live Jobs</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#upload">Upload CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#upload" class="btn">Join Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Connect With The Best Talent Opportunities</h1>
+            <p>
+                Humana International Group helps job seekers find their dream positions and
+                companies discover exceptional talent through our curated
+                network.
+            </p>
+            <div class="hero-buttons">
+                <a href="#jobs" class="btn">Browse Jobs</a>
+                <a href="#upload" class="btn">For Employers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs" id="jobs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Live Job Opportunities</h2>
+                <p>Explore our current openings and find your next career move</p>
+            </div>
+
+            <div class="filter-bar">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search job title..."
+                    class="form-control"
+                />
+                <select id="filter-location" class="form-control">
+                    <option value="">All Locations</option>
+                    <option value="North Sumatra">North Sumatra</option>
+                    <option value="Central Sulawesi">Central Sulawesi</option>
+                    <option value="Sudirman, Jakarta">Sudirman, Jakarta</option>
+                    <option value="Central Jakarta">Central Jakarta</option>
+                    <option value="Pasuruan, East Java">Pasuruan, East Java</option>
+                </select>
+                <select id="filter-type" class="form-control">
+                    <option value="">All Types</option>
+                    <option value="Full-time">Full-time</option>
+                </select>
+            </div>
+
+            <div class="jobs-grid" id="job-list">
+                <!-- Job 1 -->
+                <div
+                    class="job-card"
+                    data-title="Assistant Manager Process Safety"
+                    data-location="North Sumatra"
+                    data-type="Full-time"
+                >
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Assistant Manager Process Safety</h3>
+                            <div class="job-location">
+                                <i class="fas fa-map-marker-alt"></i>North Sumatra,
+                                Indonesia
+                            </div>
+                        </div>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <div class="job-summary">
+                        <p>
+                            Our client is a leading global manufacturing company
+                            committed to the highest standards of Safety, Health,
+                            and Environment (SHE). They are looking for an experienced
+                            and passionate professional to join their dynamic team.
+                        </p>
+                    </div>
+                    <div class="job-actions">
+                        <button
+                            class="btn"
+                            onclick="openJobModal('process-safety')"
+                        >
+                            Read More
+                        </button>
+                        <button
+                            class="btn"
+                            onclick="shareJob('Assistant Manager Process Safety')"
+                        >
+                            Refer to a Friend
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div
+                    class="job-card"
+                    data-title="Environmental Assistant Manager"
+                    data-location="North Sumatra"
+                    data-type="Full-time"
+                >
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Environmental Assistant Manager</h3>
+                            <div class="job-location">
+                                <i class="fas fa-map-marker-alt"></i>North Sumatra,
+                                Indonesia
+                            </div>
+                        </div>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <div class="job-summary">
+                        <p>
+                            On behalf of our client, a leading multinational
+                            manufacturing company in the oleochemical industry, we
+                            are seeking a highly motivated and experienced
+                            Environmental Assistant Manager.
+                        </p>
+                    </div>
+                    <div class="job-actions">
+                        <button class="btn" onclick="openJobModal('env-assistant')">
+                            Read More
+                        </button>
+                        <button
+                            class="btn"
+                            onclick="shareJob('Environmental Assistant Manager')"
+                        >
+                            Refer to a Friend
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div
+                    class="job-card"
+                    data-title="Head of External Relations & Communication"
+                    data-location="Central Sulawesi"
+                    data-type="Full-time"
+                >
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">
+                                Head of External Relations & Communication
+                            </h3>
+                            <div class="job-location">
+                                <i class="fas fa-map-marker-alt"></i>Central Sulawesi,
+                                Indonesia (Roster 4:2)
+                            </div>
+                        </div>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <div class="job-summary">
+                        <p>
+                            Leadership role in Corporate Affairs directing external
+                            relations, communications, and CSR for a major Oil & Gas
+                            international player in Indonesia. Shape social license
+                            and safeguard reputation.
+                        </p>
+                    </div>
+                    <div class="job-actions">
+                        <button
+                            class="btn"
+                            onclick="openJobModal('head-external-relations')"
+                        >
+                            Read More
+                        </button>
+                        <button
+                            class="btn"
+                            onclick="shareJob('Head of External Relations & Communication')"
+                        >
+                            Refer to a Friend
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div
+                    class="job-card"
+                    data-title="Finance & Accounting Manager"
+                    data-location="Sudirman, Jakarta"
+                    data-type="Full-time"
+                >
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Finance & Accounting Manager</h3>
+                            <div class="job-location">
+                                <i class="fas fa-map-marker-alt"></i>Sudirman, Jakarta,
+                                Indonesia
+                            </div>
+                        </div>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <div class="job-summary">
+                        <p>
+                            Strategic financial leadership role in a prestigious global
+                            industrial manufacturing company. Manage finance &
+                            accounting with SAP expertise.
+                        </p>
+                    </div>
+                    <div class="job-actions">
+                        <button
+                            class="btn"
+                            onclick="openJobModal('finance-accounting-manager')"
+                        >
+                            Read More
+                        </button>
+                        <button
+                            class="btn"
+                            onclick="shareJob('Finance & Accounting Manager')"
+                        >
+                            Refer to a Friend
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 5 -->
+                <div
+                    class="job-card"
+                    data-title="Sales Account Manager (B2B)"
+                    data-location="Central Jakarta"
+                    data-type="Full-time"
+                >
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Sales Account Manager (B2B)</h3>
+                            <div class="job-location">
+                                <i class="fas fa-map-marker-alt"></i>Central Jakarta,
+                                Indonesia
+                            </div>
+                        </div>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <div class="job-summary">
+                        <p>
+                            Manage key corporate client relationships and drive B2B
+                            sales growth in the packaging manufacturing industry.
+                        </p>
+                    </div>
+                    <div class="job-actions">
+                        <button
+                            class="btn"
+                            onclick="openJobModal('sales-account-manager')"
+                        >
+                            Read More
+                        </button>
+                        <button
+                            class="btn"
+                            onclick="shareJob('Sales Account Manager (B2B)')"
+                        >
+                            Refer to a Friend
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 6 -->
+                <div
+                    class="job-card"
+                    data-title="Project Manager"
+                    data-location="Pasuruan, East Java"
+                    data-type="Full-time"
+                >
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Project Manager</h3>
+                            <div class="job-location">
+                                <i class="fas fa-map-marker-alt"></i>Pasuruan, East Java,
+                                Indonesia
+                            </div>
+                        </div>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <div class="job-summary">
+                        <p>
+                            Lead the delivery of a new production facility in a global
+                            manufacturing leader, managing construction and machinery
+                            installation.
+                        </p>
+                    </div>
+                    <div class="job-actions">
+                        <button class="btn" onclick="openJobModal('project-manager')">
+                            Read More
+                        </button>
+                        <button
+                            class="btn"
+                            onclick="shareJob('Project Manager')"
+                        >
+                            Refer to a Friend
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal-process-safety" class="job-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeJobModal('process-safety')"
+                >&times;</span
+            >
+            <div class="modal-job-header">
+                <h2 class="modal-job-title">Assistant Manager Process Safety</h2>
+                <div class="job-location">
+                    <i class="fas fa-map-marker-alt"></i>North Sumatra, Indonesia
+                </div>
+                <div class="job-type">Full-time</div>
+            </div>
+
+            <div class="modal-job-details">
+                <p>
+                    <strong>About Our Client:</strong> Our client is a leading global
+                    manufacturing company committed to the highest standards of
+                    Safety, Health, and Environment (SHE). They are looking for an
+                    experienced and passionate professional to join their dynamic team.
+                </p>
+                <p>
+                    <strong>Job Purpose:</strong> To support the SHE Site Delivery
+                    Manager in managing and enhancing the overall Process Safety
+                    Management (PSM) system, ensuring compliance with international and
+                    local standards, and fostering a proactive safety culture across
+                    our client's manufacturing plants.
+                </p>
+            </div>
+
+            <div class="modal-job-responsibilities">
+                <h4>Key Responsibilities:</h4>
+                <ul>
+                    <li>
+                        Develop and review Process Safety procedures and work instructions
+                        based on global standards and industry best practices.
+                    </li>
+                    <li>
+                        Lead and facilitate periodic process risk assessments and
+                        workshops such as HAZOP, Bowtie, and What-If.
+                    </li>
+                    <li>Schedule and participate in internal and external Process Safety audits.</li>
+                    <li>
+                        Ensure all process-related incidents and near-misses are reported
+                        and thoroughly investigated.
+                    </li>
+                    <li>Act as a key reviewer for all Management of Change (MOC) requests.</li>
+                    <li>
+                        Initiate reviews of emergency response procedures and ensure the
+                        execution of yearly drill schedules.
+                    </li>
+                    <li>Define, manage, and audit safety critical equipment (SCE).</li>
+                    <li>Participate in Pre-Startup Safety Reviews (PSSR) for new equipment or projects.</li>
+                </ul>
+            </div>
+
+            <div class="modal-job-requirements">
+                <h4>Qualifications & Requirements:</h4>
+                <ul>
+                    <li>Bachelor's Degree in Engineering (Chemical, Mechanical, Industrial, or related field).</li>
+                    <li>
+                        Minimum of 10 years of experience in Process Safety within
+                        Oleochemical, Petrochemical, Oil & Gas, or Chemical industries.
+                    </li>
+                    <li>Proficient in international Process Safety standards (NFPA, API, ANSI) and local regulations.</li>
+                    <li>Hands-on experience with HAZOP, QRA, Bowtie Analysis, and PHA.</li>
+                    <li>Familiar with Life Critical Standards, MOC, and SCE.</li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn" onclick="applyJob('Assistant Manager Process Safety')">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-env-assistant" class="job-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeJobModal('env-assistant')"
+                >&times;</span
+            >
+            <div class="modal-job-header">
+                <h2 class="modal-job-title">Environmental Assistant Manager</h2>
+                <div class="job-location">
+                    <i class="fas fa-map-marker-alt"></i>North Sumatra, Indonesia
+                </div>
+                <div class="job-type">Full-time</div>
+            </div>
+
+            <div class="modal-job-details">
+                <p>
+                    <strong>About Our Client:</strong> On behalf of our client, a leading
+                    multinational manufacturing company in the oleochemical industry, we
+                    are seeking a highly motivated and experienced Environmental
+                    Assistant Manager.
+                </p>
+                <p>
+                    This is a key role focused on driving environmental excellence,
+                    ensuring regulatory compliance, and supporting the company's
+                    sustainability goals at their state-of-the-art manufacturing
+                    facility. You will report directly to the SHE Manager and play a
+                    crucial part in maintaining a safe and environmentally responsible
+                    workplace.
+                </p>
+            </div>
+
+            <div class="modal-job-responsibilities">
+                <h4>Key Responsibilities:</h4>
+                <ul>
+                    <li>
+                        Compliance & Standards: Ensure and maintain full compliance with
+                        all environmental standards, government regulations (e.g.,
+                        PROPER), and corporate policies.
+                    </li>
+                    <li>
+                        Policy & Procedure: Develop, implement, and continuously improve
+                        environmental procedures, guidelines, and management systems for
+                        all plant operations.
+                    </li>
+                    <li>
+                        Risk Management: Initiate and lead environmental risk management
+                        activities, including Job Safety Analysis (JSA) and Environmental
+                        Aspect & Impact Assessments.
+                    </li>
+                    <li>Auditing: Manage and coordinate annual internal audits for critical safety and environmental standards.</li>
+                    <li>
+                        Reporting: Oversee and ensure the timely and accurate submission
+                        of mandatory government reports, including RKL-RPL and EPR
+                        documentation.
+                    </li>
+                    <li>
+                        Incident Prevention: Actively support management in the prevention
+                        of environmental incidents, near misses, and releases.
+                    </li>
+                    <li>
+                        Stakeholder Collaboration: Lead and coordinate with cross-functional
+                        teams to plan and execute strategic environmental programs.
+                    </li>
+                    <li>
+                        Management Systems: Drive the review and improvement of the
+                        Integrated Management System (IMS), specifically focusing on the
+                        ISO 14001 framework.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-job-requirements">
+                <h4>Required Qualifications & Experience:</h4>
+                <ul>
+                    <li>Bachelor's Degree (S1) in Environmental Engineering or a related technical field.</li>
+                    <li>
+                        A minimum of 10 years of experience in Safety, Health & Environment
+                        (SHE), with at least 5 years in a leadership role.
+                    </li>
+                    <li>
+                        Mandatory experience in the oleochemical, chemical, or oil & gas
+                        downstream industry.
+                    </li>
+                    <li>In-depth knowledge of oleochemical products handling.</li>
+                    <li>
+                        Proficient in implementation and management of ISO 14001:2015
+                        Environmental Management Systems.
+                    </li>
+                    <li>
+                        Proven experience in managing RKL-RPL and EPR reporting in
+                        accordance with Indonesian regulations.
+                    </li>
+                    <li>
+                        Strong leadership, analytical, communication, and cross-functional
+                        coordination skills.
+                    </li>
+                    <li>Fluent in English (verbal and written).</li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn" onclick="applyJob('Environmental Assistant Manager')">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-head-external-relations" class="job-modal">
+        <div class="modal-content">
+            <span
+                class="close-modal"
+                onclick="closeJobModal('head-external-relations')"
+                >&times;</span
+            >
+            <div class="modal-job-header">
+                <h2 class="modal-job-title">
+                    Head of External Relations & Communication
+                </h2>
+                <div class="job-location">
+                    <i class="fas fa-map-marker-alt"></i>Central Sulawesi, Indonesia
+                    (Roster 4:2)
+                </div>
+                <div class="job-type">Full-time</div>
+            </div>
+
+            <div class="modal-job-details">
+                <p>
+                    <strong>About Our Client:</strong> Our client is a major
+                    international player in the Oil & Gas sector, with a significant
+                    and long-term operational presence in Indonesia. They are a
+                    critical contributor to the energy landscape, operating a world-class
+                    facility. The company is deeply committed to operational excellence,
+                    safety, and sustainable development, with a strong emphasis on
+                    building and maintaining robust relationships with government
+                    entities, local communities, and other key institutional
+                    stakeholders.
+                </p>
+                <p>
+                    The organization fosters a professional culture built on integrity,
+                    responsibility, and high ethical standards. This is a pivotal
+                    leadership role within the Corporate Affairs directorate, offering
+                    the opportunity to shape the company's social license to operate
+                    and protect its reputation in a complex and dynamic environment.
+                </p>
+            </div>
+
+            <div class="modal-job-responsibilities">
+                <h4>Job Description:</h4>
+                <ul>
+                    <li>
+                        <strong>Strategic Leadership:</strong> Develop, execute, and
+                        monitor the annual plans, budgets, and schedules for all
+                        communication, CSR, and government/community relation activities,
+                        ensuring alignment with corporate guidelines and business
+                        objectives.
+                    </li>
+                    <li>
+                        <strong>Stakeholder Management:</strong> Serve as the primary
+                        company liaison with high-level government officials,
+                        institutional leaders, and community representatives. Build and
+                        maintain strong, trusted relationships to ensure the company's
+                        messaging is understood and to mitigate social risks.
+                    </li>
+                    <li>
+                        <strong>Reputation & Communications Management:</strong> Oversee
+                        the development of all internal and external communication
+                        materials, ensuring consistency and adherence to corporate
+                        branding and messaging guidelines. Manage the company's public
+                        image and corporate reputation proactively.
+                    </li>
+                    <li>
+                        <strong>Social Management:</strong> Hold accountability for the
+                        overall social management strategy within the operating region.
+                        This includes anticipating social and security dynamics,
+                        managing community expectations, and ensuring minimal social
+                        disruption to operations.
+                    </li>
+                    <li>
+                        <strong>Event Management:</strong> Lead the planning and
+                        execution of major corporate events involving the management
+                        team, ensuring flawless implementation.
+                    </li>
+                    <li>
+                        <strong>Team Leadership & Development:</strong> Lead, coach,
+                        and develop a diverse team, fostering a culture of high
+                        performance, continuous improvement, and strict adherence to
+                        company values, safety protocols, and financial compliance.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-job-requirements">
+                <h4>Qualifications & Experience:</h4>
+                <ul>
+                    <li>
+                        A minimum of a Bachelor's degree in any relevant discipline.
+                    </li>
+                    <li>
+                        Minimum of 15 years of progressive experience in social
+                        management, external relations, and corporate communication,
+                        with at least 8 years in a senior leadership role.
+                    </li>
+                    <li>
+                        Essential: Proven experience within the LNG, Oil & Gas, or heavy
+                        industrial/extractive sectors is highly preferred.
+                    </li>
+                    <li>
+                        Deep understanding of the Indonesian political, economic, and
+                        social landscape, particularly within the region of Central
+                        Sulawesi.
+                    </li>
+                    <li>
+                        Exceptional communication, negotiation, and presentation skills,
+                        with the ability to engage effectively with diverse
+                        stakeholders, from local communities to ministerial levels.
+                    </li>
+                    <li>
+                        Demonstrated ability to analyze complex socio-political issues,
+                        solve problems under pressure, and make wise decisions that
+                        balance external demands with corporate interests.
+                    </li>
+                    <li>
+                        A resilient leader with a "can-do" attitude, high integrity,
+                        and the ability to inspire a team and navigate through
+                        bureaucratic challenges.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <button
+                    class="btn"
+                    onclick="applyJob('Head of External Relations & Communication')"
+                >
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-finance-accounting-manager" class="job-modal">
+        <div class="modal-content">
+            <span
+                class="close-modal"
+                onclick="closeJobModal('finance-accounting-manager')"
+                >&times;</span
+            >
+            <div class="modal-job-header">
+                <h2 class="modal-job-title">Finance & Accounting Manager</h2>
+                <div class="job-location">
+                    <i class="fas fa-map-marker-alt"></i>Sudirman, Jakarta, Indonesia
+                </div>
+                <div class="job-type">Full-time</div>
+            </div>
+
+            <div class="modal-job-details">
+                <p>
+                    <strong>About Our Client:</strong> Our client is a prestigious
+                    global leader in the industrial manufacturing and technology
+                    sector. As a Japanese multinational corporation (PMA), they are
+                    renowned for their innovative solutions, high-quality products,
+                    and commitment to operational excellence. This is a prime
+                    opportunity to join a respected industry leader with a strong
+                    presence in Indonesia and a dynamic, professional work environment.
+                </p>
+            </div>
+
+            <div class="modal-job-responsibilities">
+                <h4>Job Description (Key Responsibilities):</h4>
+                <ul>
+                    <li>
+                        <strong>Financial Leadership:</strong> Oversee the complete
+                        spectrum of finance and accounting functions, including general
+                        accounting, accounts payable & receivable, treasury, tax, and
+                        financial reporting.
+                    </li>
+                    <li>
+                        <strong>Strategic Business Partnership:</strong> Provide
+                        critical financial analysis, insights, and recommendations to
+                        support strategic planning, business development initiatives,
+                        and executive decision-making.
+                    </li>
+                    <li>
+                        <strong>Compliance & Control:</strong> Ensure strict adherence
+                        to all Indonesian Financial Accounting Standards (PSAK), tax
+                        regulations (including Brevet A & B), and corporate governance
+                        policies. Maintain a robust internal control environment.
+                    </li>
+                    <li>
+                        <strong>System & Process Excellence:</strong> Leverage deep
+                        expertise in SAP to optimize financial processes, enhance
+                        reporting accuracy, and drive operational efficiency across the
+                        finance function.
+                    </li>
+                    <li>
+                        <strong>Team Management:</strong> Lead, mentor, and develop the
+                        local finance team, fostering a culture of continuous
+                        improvement and high performance.
+                    </li>
+                    <li>
+                        <strong>Stakeholder Engagement:</strong> Collaborate
+                        effectively with regional and global headquarters, external
+                        auditors, tax authorities, and other key stakeholders.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-job-requirements">
+                <h4>Qualifications & Experience:</h4>
+                <ul>
+                    <li>
+                        Bachelor’s Degree in Accounting or Finance; a Master’s degree or
+                        professional certification (CPA, CA) is a significant advantage.
+                    </li>
+                    <li>Mandatory possession of Brevet A & B certification.</li>
+                    <li>
+                        A minimum of 5 years of proven experience in a Finance &
+                        Accounting Manager role, preferably within a multinational
+                        corporation (PMA).
+                    </li>
+                    <li>Mandatory hands-on experience with SAP ERP systems.</li>
+                    <li>
+                        A background from a Big 4 or reputable public accounting firm
+                        is highly desirable.
+                    </li>
+                    <li>Fluency in English (both written and spoken) is essential.</li>
+                    <li>
+                        Proficiency in Japanese is a strong advantage for effective
+                        communication with headquarters.
+                    </li>
+                    <li>
+                        Exceptional analytical, problem-solving, and leadership skills
+                        with a strategic mindset.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <button
+                    class="btn"
+                    onclick="applyJob('Finance & Accounting Manager')"
+                >
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sales-account-manager" class="job-modal">
+        <div class="modal-content">
+            <span
+                class="close-modal"
+                onclick="closeJobModal('sales-account-manager')"
+                >&times;</span
+            >
+            <div class="modal-job-header">
+                <h2 class="modal-job-title">Sales Account Manager (B2B)</h2>
+                <div class="job-location">
+                    <i class="fas fa-map-marker-alt"></i>Central Jakarta, Indonesia
+                </div>
+                <div class="job-type">Full-time</div>
+            </div>
+
+            <div class="modal-job-details">
+                <p>
+                    <strong>About Our Client:</strong> Our client is a premier and
+                    long-established leader in the packaging manufacturing industry.
+                    As a robust joint venture between Japanese and Chinese
+                    conglomerates, they bring together decades of technological
+                    expertise and manufacturing excellence. With a significant
+                    footprint in Indonesia spanning over 50 years and a network of
+                    more than 10 production facilities, they are a critical partner
+                    to major industries, providing high-quality, innovative
+                    packaging solutions.
+                </p>
+            </div>
+
+            <div class="modal-job-responsibilities">
+                <h4>Job Description (Key Responsibilities):</h4>
+                <ul>
+                    <li>
+                        <strong>Key Account Management:</strong> Serve as the primary
+                        relationship manager for a portfolio of existing corporate
+                        clients (B2B), ensuring high levels of client satisfaction,
+                        identifying growth opportunities within accounts, and
+                        strategically managing the business relationship.
+                    </li>
+                    <li>
+                        <strong>Strategic Business Development:</strong> Proactively
+                        conduct sales visits, presentations, and negotiations to secure
+                        new contracts and expand the company's market share within
+                        targeted industries.
+                    </li>
+                    <li>
+                        <strong>Sales Target Achievement:</strong> Take full ownership
+                        of achieving and exceeding ambitious sales targets and key
+                        performance indicators (KPIs) set by the organization.
+                    </li>
+                    <li>
+                        <strong>Market Intelligence:</strong> Act as the "eyes and
+                        ears" in the market, providing valuable feedback on client
+                        needs, competitive activities, and potential for new products
+                        or services.
+                    </li>
+                    <li>
+                        <strong>System Utilization:</strong> Effectively utilize CRM
+                        and ERP systems (e.g., SAP) to manage the sales pipeline,
+                        forecast accurately, and maintain meticulous client records.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-job-requirements">
+                <h4>Qualifications & Experience:</h4>
+                <ul>
+                    <li>
+                        Bachelor’s degree in Engineering, Business Administration,
+                        Marketing, or a related field.
+                    </li>
+                    <li>
+                        A minimum of 5 years of proven B2B sales and key account
+                        management experience, preferably within the packaging, FMCG,
+                        or industrial manufacturing sectors.
+                    </li>
+                    <li>
+                        Demonstrated track record of meeting and exceeding sales targets
+                        in a complex, solution-selling environment.
+                    </li>
+                    <li>Mandatory professional fluency in English.</li>
+                    <li>
+                        Proficiency in Mandarin or Hokkien is a highly preferred
+                        advantage for effective communication with key stakeholders.
+                    </li>
+                    <li>
+                        Technical proficiency with CRM systems and ERP software (e.g.,
+                        SAP) is essential.
+                    </li>
+                    <li>
+                        The ideal candidate will be a self-motivated, results-driven,
+                        and highly organized professional with exceptional presentation
+                        and negotiation skills.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <button
+                    class="btn"
+                    onclick="applyJob('Sales Account Manager (B2B)')"
+                >
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-project-manager" class="job-modal">
+        <div class="modal-content">
+            <span
+                class="close-modal"
+                onclick="closeJobModal('project-manager')"
+                >&times;</span
+            >
+            <div class="modal-job-header">
+                <h2 class="modal-job-title">Project Manager</h2>
+                <div class="job-location">
+                    <i class="fas fa-map-marker-alt"></i>Pasuruan, East Java,
+                    Indonesia
+                </div>
+                <div class="job-type">Full-time</div>
+            </div>
+
+            <div class="modal-job-details">
+                <p>
+                    <strong>About Our Client:</strong> Our client is a globally
+                    recognized manufacturing leader with a distinguished 250-year
+                    legacy. Consistently acclaimed as one of the "World’s Best
+                    Workplaces," the company specializes in pioneering sustainable
+                    and innovative industrial solutions, with a significant presence
+                    across more than 50 countries. They are deeply committed to
+                    operational excellence, diversity, and fostering an
+                    industry-leading safety culture.
+                </p>
+            </div>
+
+            <div class="modal-job-responsibilities">
+                <h4>Role Purpose:</h4>
+                <ul>
+                    <li>
+                        The Project Manager will be entrusted with the end-to-end
+                        leadership and delivery of a critical new production facility.
+                        This high-impact role involves full accountability for the
+                        construction of a new building, installation of state-of-the-art
+                        machinery, and ensuring the project is launched successfully
+                        into operations. The successful candidate will be the key
+                        driver in ensuring the project is completed on time, within
+                        budget, to the highest quality and safety standards.
+                    </li>
+                </ul>
+                <h4>Key Responsibilities:</h4>
+                <ul>
+                    <li>
+                        <strong>End-to-End Project Leadership:</strong> Take full
+                        ownership of the project lifecycle, from planning and execution
+                        to handover, for a new dyeing and finishing production building.
+                    </li>
+                    <li>
+                        <strong>Construction Management:</strong> Oversee all civil,
+                        MEP (Mechanical, Electrical, Plumbing), and utilities
+                        construction, ensuring strict adherence to quality procedures,
+                        technical drawings, and specifications.
+                    </li>
+                    <li>
+                        <strong>Machinery Installation & Commissioning:</strong> Plan
+                        and execute the installation of dyeing, finishing, and utility
+                        machines, ensuring operational readiness and identifying
+                        opportunities for process optimization.
+                    </li>
+                    <li>
+                        <strong>Stakeholder Coordination:</strong> Act as the central
+                        point of coordination between consultants, contractors, internal
+                        cross-functional teams, and local authorities to ensure
+                        seamless project execution.
+                    </li>
+                    <li>
+                        <strong>HSE & Compliance Stewardship:</strong> Champion a
+                        zero-incident culture by rigorously implementing and enforcing
+                        all health, safety, and environmental (HSE) policies. Ensure
+                        full compliance with all local regulatory and permit
+                        requirements.
+                    </li>
+                    <li>
+                        <strong>Budget & Timeline Management:</strong> Maintain
+                        meticulous project documentation, track progress against
+                        milestones, manage the budget, and proactively identify and
+                        mitigate risks to avoid delays and cost overruns.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-job-requirements">
+                <h4>Qualifications & Experience:</h4>
+                <ul>
+                    <li>
+                        A Bachelor’s degree in Electrical or Mechanical Engineering is
+                        required.
+                    </li>
+                    <li>
+                        A minimum of 5-7 years of proven experience in a Construction
+                        Manager or Project Manager role, with a track record of managing
+                        large-scale, complex construction or industrial projects from
+                        start to finish.
+                    </li>
+                    <li>
+                        Essential experience working within a multinational corporation
+                        (MNC) in a similar project management capacity.
+                    </li>
+                    <li>
+                        Strong technical expertise in both electrical and mechanical
+                        systems, with the ability to read and interpret technical
+                        drawings.
+                    </li>
+                    <li>
+                        Fluent professional proficiency in English and Bahasa Indonesia
+                        is mandatory.
+                    </li>
+                    <li>
+                        A results-driven and cost-oriented mindset, combined with
+                        exceptional problem-solving skills.
+                    </li>
+                    <li>
+                        Excellent leadership, communication, and team coaching abilities
+                        to manage diverse stakeholders and foster a collaborative
+                        project environment.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn" onclick="applyJob('Project Manager')">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Humana International Group?</h2>
+                <p>We provide an efficient platform connecting job seekers and companies</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-upload"></i></div>
+                    <h3>Easy CV Upload</h3>
+                    <p>Simple and fast CV upload process with automatic parsing system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3>Smart Matching</h3>
+                    <p>Advanced search technology to find the most suitable candidates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Wide Network</h3>
+                    <p>Access to talent database from various backgrounds and expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section" id="upload">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-title">
+                    <h2>Submit Your Application</h2>
+                    <p>Join our talent pool and get discovered by top employers</p>
+                </div>
+                <!-- Netlify Form -->
+                <form
+                    name="job-application"
+                    method="POST"
+                    data-netlify="true"
+                    enctype="multipart/form-data"
+                    action="/success.html"
+                >
+                    <input type="hidden" name="form-name" value="job-application" />
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Desired Position</label>
+                            <input
+                                type="text"
+                                id="position"
+                                name="position"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">Work Experience (years)</label>
+                            <input
+                                type="number"
+                                id="experience"
+                                name="experience"
+                                class="form-control"
+                                min="0"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="salary">Expected Salary (Gross)</label>
+                            <input
+                                type="text"
+                                id="salary"
+                                name="salary"
+                                class="form-control"
+                                placeholder="e.g., Rp 15.000.000"
+                                required
+                            />
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="skills">Skills (separate with commas)</label>
+                            <input
+                                type="text"
+                                id="skills"
+                                name="skills"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Cover Letter</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                class="form-control"
+                                placeholder="Tell us about yourself and why you're interested in this position..."
+                            ></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="cv">Upload CV (PDF, DOC, DOCX - Max 5MB)</label>
+                            <input
+                                type="file"
+                                id="cv"
+                                name="cv"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit" class="btn">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Industrial Jobs</h3>
+                    <p>by Humana International Group</p>
+                    <p>
+                        Connecting the best talent with the best career opportunities
+                        across Indonesia and beyond.
+                    </p>
+                    <div class="social-links">
+                        <a
+                            href="https://www.linkedin.com/company/mrihumana/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                        <a
+                            href="https://www.instagram.com/humana_international/"
+                            target="_blank"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="https://humanainternational.com/" target="_blank"
+                            ><i class="fas fa-globe"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#home"
+                                ><i class="fas fa-chevron-right"></i>Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#jobs"
+                                ><i class="fas fa-chevron-right"></i>Live Jobs</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#features"
+                                ><i class="fas fa-chevron-right"></i>Features</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#upload"
+                                ><i class="fas fa-chevron-right"></i>Upload CV</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-building"></i
+                                >PT HUMANA INTERNATIONAL INDONESIA</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-map-marker-alt"></i
+                                >Astra Tower 37th Floor Suite 131 & 134</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-location-arrow"></i
+                                >Jl. Jendral Sudirman Kav 3-4</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-city"></i
+                                >Jakarta Pusat 10220</a
+                            >
+                        </li>
+                        <li>
+                            <a href="mailto:Falah@humanainternational.com"
+                                ><i class="fas fa-envelope"></i
+                                >Falah@humanainternational.com</a
+                            >
+                        </li>
+                        <li>
+                            <a href="tel:+62-21-31154523"
+                                ><i class="fas fa-phone"></i>+62-21-31154523</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-clock"></i>Mon-Fri: 9:00 - 17:00</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright © 2025 Humana International Group | Some rights
+                    reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Job filtering functionality
+        const searchInput = document.getElementById("search");
+        const filterLocation = document.getElementById("filter-location");
+        const filterType = document.getElementById("filter-type");
+        const jobList = document.getElementById("job-list");
+        const jobCards = jobList.getElementsByClassName("job-card");
+
+        function filterJobs() {
+            const search = searchInput.value.toLowerCase();
+            const location = filterLocation.value;
+            const type = filterType.value;
+
+            for (let card of jobCards) {
+                const title = card.getAttribute("data-title").toLowerCase();
+                const loc = card.getAttribute("data-location");
+                const jtype = card.getAttribute("data-type");
+
+                let visible = true;
+
+                if (search && !title.includes(search)) {
+                    visible = false;
+                }
+
+                if (location && loc !== location) {
+                    visible = false;
+                }
+
+                if (type && jtype !== type) {
+                    visible = false;
+                }
+
+                card.style.display = visible ? "block" : "none";
+            }
+        }
+
+        searchInput.addEventListener("input", filterJobs);
+        filterLocation.addEventListener("change", filterJobs);
+        filterType.addEventListener("change", filterJobs);
+
+        // Modal functionality
+        function openJobModal(jobId) {
+            document.getElementById(`modal-${jobId}`).style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeJobModal(jobId) {
+            document.getElementById(`modal-${jobId}`).style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            const modals = document.getElementsByClassName("job-modal");
+            for (let modal of modals) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            }
+        };
+
+        // Apply Job functionality
+        function applyJob(position) {
+            document.getElementById("position").value = position;
+            document.getElementById("upload").scrollIntoView({ behavior: "smooth" });
+            // Close all modals
+            const modals = document.getElementsByClassName("job-modal");
+            for (let modal of modals) {
+                modal.style.display = "none";
+            }
+            document.body.style.overflow = "auto";
+        }
+
+        // Share Job functionality
+        function shareJob(jobTitle) {
+            const shareUrl = `${window.location.origin}${window.location.pathname}#jobs`;
+            const shareText = `Check out this job opportunity: ${jobTitle} at Industrial Jobs by Humana International Group`;
+
+            if (navigator.share) {
+                navigator
+                    .share({
+                        title: jobTitle,
+                        text: shareText,
+                        url: shareUrl,
+                    })
+                    .catch(console.error);
+            } else if (navigator.clipboard) {
+                navigator.clipboard
+                    .writeText(`${shareText} - ${shareUrl}`)
+                    .then(() => {
+                        alert("Job link copied to clipboard!");
+                    })
+                    .catch((err) => {
+                        console.error("Could not copy text: ", err);
+                    });
+            } else {
+                // Fallback with WhatsApp
+                const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(
+                    shareText + " " + shareUrl
+                )}`;
+                window.open(whatsappUrl, "_blank");
+            }
+        }
+    </script>
+</body>
+</html>
